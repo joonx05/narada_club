@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-import HeroSection from "@/components/HeroSection";
+import CryptoCampaign from "@/components/ShowCaseCard";
 import LiveProject from "@/components/LiveProject";
-import Testimonials from "@/components/Testimonials";
-import ContactUs from "@/components/ContactUs";
-import Tokenomics from "@/components/Tokenomics";
+import StorySection from "@/components/StorySection";
 
 export default function Home() {
   useEffect(() => {
@@ -19,11 +17,8 @@ export default function Home() {
   });
   return (
     <div>
-      <HeroSection/>
-      <LiveProject/>
-      <Testimonials/>
-      <ContactUs/>
-      <Tokenomics />
+      <CryptoCampaign/>
+      <StorySection/>
     </div>
   );
 }

@@ -3,11 +3,11 @@ import SecondView from "./Views/SecondView"
 
 function HeroSection() {
   return (
-    <div>
+    <div className="w-full min-h-screen">
       <FirstView/>
-      <SecondView/>
     </div>
   )
 }
 
 export default HeroSection
+// 730px 672px border 15px  
