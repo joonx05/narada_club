@@ -102,7 +102,7 @@ const Dashboard = () => {
       >
         {/* Header */}
         <div className='bg-[#6f6f6f] rounded-lg'>
-        <div className="flex justify-between items-start mb-4 h-[250px] p-2">
+        <div className="flex justify-between items-start mb-4 h-[200px] p-2">
           <span className="text-white bg-black px-3 py-1 rounded-full text-xs flex gap-2 justify-center items-center">
           <div className="w-3 h-3 bg-[#565656]"></div>
             New Bid
@@ -113,15 +113,17 @@ const Dashboard = () => {
           </button>
           </div>
         </div>
+        <div className="text-green-400 text-sm flex justify-end p-1">
+          {project.growth}
+        </div>
+        
         </div>
 
         {/* Growth Percentage */}
-        <div className="absolute bottom-4 right-4 text-green-400 text-sm">
-          {project.growth}
-        </div>
+        
 
         {/* Items List */}
-        <div className="space-y-3">
+        <div className="space-y-3 mt-2">
           {project.items.map((item, idx) => (
             <div key={idx} className="flex items-center gap-2 text-white text-sm">
               <ArrowUpRight size={14} />
