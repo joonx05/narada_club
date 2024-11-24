@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
-import CryptoCampaign from "@/components/ShowCaseCard";
-import StorySection from "@/components/StorySection";
+import Sidebar from "@/components/Sidebar";
+import Dashboard from "@/components/Dashboard";
 
-export default function Showcase() {
+export default function DashboardPage() {
   useEffect(() => {
     let scroll: any;
     import("locomotive-scroll").then((locomotiveModule) => {
@@ -15,9 +15,9 @@ export default function Showcase() {
     };
   });
   return (
-    <div>
-      <CryptoCampaign/>
-      <StorySection/>
+    <div className="flex">
+      <Sidebar/>
+      <Dashboard/>
     </div>
   );
 }
